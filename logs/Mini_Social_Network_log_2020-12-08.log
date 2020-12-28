@@ -1,0 +1,67 @@
+2020-12-08 18:12:20 ERROR SignupController:156 - Error at SignUpController: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f92sm3045607pjk.54 - gsmtp
+
+2020-12-08 18:21:14 ERROR SignupController:156 - Error at SignUpController: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs
+534-5.7.14 ppGAEyA1W5nIFVWQW61Z7Pr1XXeki9MR8AYq5IpvqL_JkweaNnPFCe1Ox5EWRmAV1mJ6A
+534-5.7.14 lyTnUWJ0DL6y_IflGAf80CE9B0eGxdS7-lEV_pvfzOt67sn48RheHUxXo-Y9KgfG>
+534-5.7.14 Please log in via your web browser and then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 e13sm6284010pgh.54 - gsmtp
+
+2020-12-08 18:22:53 ERROR SignupController:156 - Error at SignUpController: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv
+534-5.7.14 I6DyKO9C3N96fQJurnS4OoRQEiXrRh92oyjGu0yScudWEc6W8ZgDSOjG22wOt0Z1FukxN
+534-5.7.14 ZZBtw95vYZet0Qyai4eyfNqligGr8A5Fsjg_DEE0M6priXaVbz_31ZG6h_Mgrv9G>
+534-5.7.14 Please log in via your web browser and then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 w5sm10915079pfw.66 - gsmtp
+
+2020-12-08 18:26:35 ERROR SignupController:156 - Error at SignUpController: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv
+534-5.7.14 EpYJEaN6jfRBzAbzX9kZiBUl3dt_pInwfHSSiwXtKkjny9PEe4AKbowsoaS0dYXYPeBkI
+534-5.7.14 Z95yEqqw46ZBPKzbEv387lRnD73brBbBZq-e4Gu1dWp-zHgBSJB35YzFwxylwNho>
+534-5.7.14 Please log in via your web browser and then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 c132sm14995592pfc.119 - gsmtp
+
+2020-12-08 18:28:28 ERROR MainController:78 - Error at MainController: null
+2020-12-08 18:29:54 ERROR MainController:78 - Error at MainController: null
+2020-12-08 18:34:08 ERROR MainController:79 - Error at MainController: null
+2020-12-08 20:48:49 INFO  LoginController:36 - LoginController begining
+2020-12-08 20:49:19 INFO  LoginController:36 - LoginController begining
+2020-12-08 21:14:30 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:25:01 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:26:22 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:30:57 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:30:59 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:38:00 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:38:43 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:45:09 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:45:22 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:45:43 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:45:56 INFO  LoginController:34 - LoginController begining
+2020-12-08 21:50:52 ERROR MainController:79 - Error at MainController: null
+2020-12-08 21:55:10 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:04:59 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:16:50 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:17:19 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:17:49 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:19:34 ERROR MainController:79 - Error at MainController: null
+2020-12-08 22:19:40 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:22:48 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:25:31 ERROR MainController:79 - Error at MainController: null
+2020-12-08 22:25:48 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:28:52 ERROR MainController:79 - Error at MainController: null
+2020-12-08 22:29:02 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:31:58 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:33:26 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:36:33 ERROR MainController:79 - Error at MainController: null
+2020-12-08 22:36:41 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:40:03 INFO  LoginController:34 - LoginController begining
+2020-12-08 22:41:10 INFO  LoginController:34 - LoginController begining
+2020-12-08 23:40:02 ERROR SignupController:155 - Error at SignUpController: Violation of PRIMARY KEY constraint 'PK__Accounts__A9D105359D8366C4'. Cannot insert duplicate key in object 'dbo.tbl_Users'. The duplicate key value is (kazuocyrus@gmail.com).
+2020-12-08 23:44:41 ERROR MainController:79 - Error at MainController: null
+2020-12-08 23:48:28 ERROR MainController:79 - Error at MainController: null
+2020-12-08 23:49:33 ERROR MainController:80 - Error at MainController: null
+2020-12-08 23:51:04 ERROR SignupController:156 - Error at SignUpController: Violation of PRIMARY KEY constraint 'PK__Accounts__A9D105359D8366C4'. Cannot insert duplicate key in object 'dbo.tbl_Users'. The duplicate key value is (ahihi@gmail.com).
+2020-12-08 23:51:49 ERROR MainController:80 - Error at MainController: null
+2020-12-08 23:58:49 INFO  LoginController:34 - LoginController begining
+2020-12-08 23:58:49 ERROR LoginController:74 - Error LoginController at: null

@@ -61,7 +61,7 @@
                         <div class="form-group">
                             <h4>Input your code: </h4>
                             <input class="form-control" type="text" name="txtCode" value="" /> <br/>
-                            <input type="hidden" value="${requestScope.EMAIL_REGISTERED}" name="txtEmail" /> <br/>
+                            <input type="hidden" value="${sessionScope.EMAIL_REGISTERED}" name="txtEmail" /> <br/>
                             <input class="btn btn-primary" type="submit" value="Verify" name="action" />
                         </div>
 

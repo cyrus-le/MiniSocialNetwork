@@ -45,16 +45,14 @@ public class SearchArticlesController extends HttpServlet {
             if (request.getParameter("page") != null) {
                 pageNum = Integer.parseInt(request.getParameter("page"));
             }
-//            int numberRecords = DAO.getAllRecords();
-            int numberRecords = DAO.getAllRecordsByAuthor(email);
+            int numberRecords = DAO.getAllRecords();
             int start = pageNum * POST_PER_PAGE;
             int totalPageNum = numberRecords / POST_PER_PAGE;
             if (numberRecords % POST_PER_PAGE != 0) {
                 totalPageNum++;
             }
 
-//            List<ArticlesDTO> list = DAO.findByLikeName(search, start, POST_PER_PAGE);
-            List<ArticlesDTO> list = DAO.findByLikeNameByAuthor(email, search, start, POST_PER_PAGE);
+            List<ArticlesDTO> list = DAO.findByLikeName(search, start, POST_PER_PAGE);
             if (list != null) {
                 request.setAttribute("LIST", list);
                 request.setAttribute("PAGE", totalPageNum);

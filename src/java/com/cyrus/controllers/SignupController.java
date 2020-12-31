@@ -21,6 +21,7 @@ import com.cyrus.dtos.UserErrorObj;
 import com.cyrus.dtos.UsersDTO;
 import com.cyrus.utils.EncryptUtil;
 import com.cyrus.utils.SendingEmail;
+import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 
 /**
@@ -123,7 +124,6 @@ public class SignupController extends HttpServlet {
     private void callInsert(final HttpServletRequest request) throws SQLException, NamingException, NoSuchAlgorithmException, MessagingException {
         String url = ERROR;
         String email = request.getParameter("txtEmail");
-        request.setAttribute("EMAIL_REGISTER", email);
 
         String password = EncryptUtil.encryptPassword(request.getParameter("txtPassword"));
         String name = request.getParameter("txtName");
@@ -134,7 +134,8 @@ public class SignupController extends HttpServlet {
         String code = String.format("%06d", num);
         UsersDTO dto = new UsersDTO(email, name, password, "member", code);
         if (DAO.insert(dto)) {
-            request.setAttribute("EMAIL_REGISTERED", email);
+            HttpSession session = request.getSession();
+            session.setAttribute("EMAIL_REGISTERED", email);
             SendingEmail sendingEmail = new SendingEmail(email, code);
             sendingEmail.sendEmail();
             url = SUCCESS;

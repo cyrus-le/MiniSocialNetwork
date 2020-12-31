@@ -1,0 +1,1 @@
+2020-12-31 21:18:59 ERROR SignupController:162 - Error at SignUpController: Violation of PRIMARY KEY constraint 'PK__Accounts__A9D105359D8366C4'. Cannot insert duplicate key in object 'dbo.tbl_Users'. The duplicate key value is (lienkhuong72@gmail.com).

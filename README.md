@@ -38,7 +38,7 @@
     - Javax Mail
     
 ## Contact me 👇
-1. **[Linkedin](https://www.linkedin.com/in/cyrus-le-81a065180/)
+1. **[Linkedin](https://www.linkedin.com/in/cyrus-le-81a065180/)**
 2. **[Facebook](https://www.facebook.com/cyrus.le.79/)**
 3. **[Instagram](https://www.instagram.com/_cyrus.le_/)**
 4. ***Email:*** *kazuocyrus@gmail.com | lanlnhse140961@fpt.edu.vn*

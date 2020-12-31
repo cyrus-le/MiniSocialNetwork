@@ -76,7 +76,7 @@
                             </div>
                         </a>
                     </c:when>
-                    <c:when test="${dto.type == 'dislike'}">
+                    <c:when test="${dto.type == 'like'}">
                         <a href="${urlDetail}" style="text-decoration: none">
                             <div class="alert alert-secondary" style="margin: 10px 390px; position: relative; top: 100px">
                                 <b>${dto.reacter}</b> liked your <b>${dto.title}</b>'s post.<br/>
@@ -87,7 +87,7 @@
                     <c:when test="${dto.type == 'dislike'}">
                         <a href="${urlDetail}" style="text-decoration: none">
                             <div class="alert alert-secondary" style="margin: 10px 390px; position: relative; top: 100px">
-                                <b>${dto.reacter}</b> liked your <b>${dto.title}</b>'s post.<br/>
+                                <b>${dto.reacter}</b> disliked your <b>${dto.title}</b>'s post.<br/>
                                 <small>${dto.date}</small>
                             </div>
 

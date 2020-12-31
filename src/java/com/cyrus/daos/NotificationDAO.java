@@ -80,7 +80,7 @@ public class NotificationDAO implements ICRUDRepository<NotificationDTO, String>
         try {
             String sql = "SELECT NotifyID, noti.PostID, noti.Email, \n"
                     + "noti.Date, Type, emotion.Email as Reacter, \n"
-                    + "comment.Email as commenter, article.Title \n"
+                    + "comment.Email as Commenter, article.Title \n"
                     + "FROM tbl_Notify noti LEFT JOIN tbl_Comments comment \n"
                     + "ON noti.PostID = comment.PostID\n"
                     + "LEFT JOIN tbl_Emotion emotion\n"

@@ -30,7 +30,7 @@
 
 
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark active">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -161,21 +161,28 @@
 
 
 
+            <c:if test="${not empty requestScope.LIST}">
+                <ul class="pagination d-flex- justify-content-center">
+                    <li class="page-item <c:if test="${requestScope.CURPAGE eq 0 }">disabled</c:if>">
+                        <a  class="page-link" href="SocialNetworkController?page=${requestScope.CURPAGE - 1}">Previous</a>
+                    </li>
+                    <c:forEach var="i" begin="1" end="${requestScope.PAGE}" step="1">
+                        <li class="page-item <c:if test="${requestScope.CURPAGE + 1 eq i}">active</c:if>">
+                            <a class="page-link" href="SocialNetworkController?page=${i - 1}">${i}</a>
+                        </li> 
+                    </c:forEach>
 
-            <ul class="pagination d-flex- justify-content-center">
-                <li class="page-item <c:if test="${requestScope.CURPAGE eq 0 }">disabled</c:if>">
-                    <a  class="page-link" href="SocialNetworkController?page=${requestScope.CURPAGE - 1}">Previous</a>
-                </li>
-                <c:forEach var="i" begin="1" end="${requestScope.PAGE}" step="1">
-                    <li class="page-item <c:if test="${requestScope.CURPAGE + 1 eq i}">active</c:if>">
-                        <a class="page-link" href="SocialNetworkController?page=${i - 1}">${i}</a>
-                    </li> 
-                </c:forEach>
+                    <li class="page-item <c:if test="${requestScope.CURPAGE eq requestScope.PAGE - 1}">disabled</c:if>">
+                        <a class="page-link" href="SocialNetworkController?page=${requestScope.CURPAGE + 1}">Next</a>
+                    </li>
+                </ul>
+            </c:if>
+            <c:if test="${empty requestScope.LIST}">
+                <div class="alert alert-dark my-5">
+                    <i class="fas fa-search"></i><strong> NOT FOUND </strong>  OOPS You haven't posted anything.......
+                </div>
+            </c:if>
 
-                <li class="page-item <c:if test="${requestScope.CURPAGE eq requestScope.PAGE - 1}">disabled</c:if>">
-                    <a class="page-link" href="SocialNetworkController?page=${requestScope.CURPAGE + 1}">Next</a>
-                </li>
-            </ul>
         </div>
 
         <!--inssert article-->

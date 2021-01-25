@@ -58,11 +58,18 @@
                             </div>
                             <br/>
 
-                            <input type="submit" class=" btn btn-outline-success py-2" value="Login" name="action"/>                                                                           
+                            <input type="submit" class=" btn btn-success my-1" value="Login" name="action"/>                                                                           
 
                             <br/>
 
-                            <a href="signup.jsp">Don't have an account? Sign up here</a>
+                            <a class="btn btn-outline-info my-3" href="signup.jsp">
+                                Don't have an account? Sign up here
+                                <i class="fas fa-user-plus"></i>
+                            </a> <br/>
+                            <a class="btn btn-outline-danger" href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8084/MiniSocialNetwork/LoginByGoogleController&response_type=code
+                               &client_id=99357018574-f5rf0s8jifbd3jsdob9q7o04bmii7g8q.apps.googleusercontent.com&approval_prompt=force">
+                                Login By Google <i class="fab fa-google"></i>
+                            </a>  
 
 
                         </div>

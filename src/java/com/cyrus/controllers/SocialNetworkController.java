@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.cyrus.daos.ArticlesDAO;
 import com.cyrus.dtos.ArticlesDTO;
 import com.cyrus.dtos.UsersDTO;
+import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 
 /**
@@ -35,8 +36,8 @@ public class SocialNetworkController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try {
-
-            UsersDTO userDTO = (UsersDTO) request.getSession().getAttribute("USER");
+            HttpSession session = request.getSession();
+            UsersDTO userDTO = (UsersDTO) session.getAttribute("USER");
             String email = userDTO.getEmail();
 
             int pageNum = 0;

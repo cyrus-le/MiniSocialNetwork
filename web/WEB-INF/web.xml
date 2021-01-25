@@ -64,6 +64,10 @@
         <servlet-name>ViewOurPostsController</servlet-name>
         <servlet-class>com.cyrus.controllers.ViewOurPostsController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginByGoogleController</servlet-name>
+        <servlet-class>com.cyrus.controllers.LoginByGoogleController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MainController</servlet-name>
         <url-pattern>/MainController</url-pattern>
@@ -131,6 +135,10 @@
     <servlet-mapping>
         <servlet-name>ViewOurPostsController</servlet-name>
         <url-pattern>/ViewOurPostsController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginByGoogleController</servlet-name>
+        <url-pattern>/LoginByGoogleController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -45,6 +45,7 @@ public class UsersDAO implements ICRUDRepository<UsersDTO, String> {
         }
     }
 
+
     public boolean checkActivateCode(String code, String email) throws SQLException, NamingException {
         boolean check = false;
         try {
@@ -160,12 +161,33 @@ public class UsersDAO implements ICRUDRepository<UsersDTO, String> {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public UsersDTO checkExistedEmailGoogle(String email) throws SQLException, NamingException {
+        boolean check = false;
+        UsersDTO dto = null;
+        try {
+            String sql = "SELECT Email, Password, Name, Role, Status, Code FROM tbl_Users WHERE Email = ?";
+            conn = MyConnection.getConnection();
+            if (conn != null) {
+                preStm = conn.prepareStatement(sql);
+                preStm.setString(1, email);
+                rs = preStm.executeQuery();
+                if (rs.next()) {
+                    String password = rs.getString("Password");
+                    String name = rs.getString("Name");
+                    String role = rs.getString("Role");
+                    String status = rs.getString("Status");
+                    dto = new UsersDTO(email, name, password, role, status, null);
+                }
+            }
+        } finally {
+            closeConnection();
+        }
+        return dto;
+    }
+
     @Override
     public UsersDTO get(String v) throws SQLException, NamingException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
-
-
-

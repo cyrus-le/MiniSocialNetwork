@@ -16,6 +16,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
     </head>
+    <style>
+        textarea{
+            resize: none;
+            white-space: pre-wrap;
+            width: 440px;
+        }
+    </style>
 
     <body class="bg-light">
         <c:if test="${empty sessionScope.USER}">
@@ -81,7 +88,7 @@
                         <input type="hidden" value="${dto.email}" name="txtAuthorPost" />
                         <c:if test="${sessionScope.USER.role != 'admin'}">
                             <label for="comment">Comment:</label>
-                            <textarea class="form-control col-md-8" rows="5"  name="txtComment" id="comment"></textarea> <br/>
+                            <textarea required class="form-control col-md-8" rows="5"  name="txtComment" id="comment"></textarea> <br/>
                             <input class="btn btn-success" type="submit" value="Comment" name="action" />
                             <a class="btn btn-secondary" href="SocialNetworkController">
                                 <i class="fa fa-backward"></i> Go back

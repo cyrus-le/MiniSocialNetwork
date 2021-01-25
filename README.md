@@ -14,6 +14,7 @@
 > - Show Notification
 > - Delete the Article
 > - Verify registered user using email
+> - Login By Google Email [Updated]
 
 ## ***Special Features***
 > 1. Password encrypted using SHA-256

@@ -14,13 +14,14 @@
 > - Show Notification
 > - Delete the Article
 > - Verify registered user using email
-> - Login By Google Email [Updated]
+> - Login By Google Email ##[Updated]
 
 ## ***Special Features***
 > 1. Password encrypted using SHA-256
 > 2. Paging
 > 3. Datasource
 > 4. Verify the account by Email
+> 5. Using OAuth 2.0 to Access Google APIs
 
 ## System dependencies 
   - ### Tools:

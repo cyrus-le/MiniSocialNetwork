@@ -40,23 +40,23 @@ public class LoginByGoogleController extends HttpServlet {
             if (code != null || !code.isEmpty()) {
                 String accessToken = GoogleUtils.getToken(code);
                 GoogleDTO googleDTO = GoogleUtils.getUserInfo(accessToken);
-                String email = googleDTO.getEmail();             
+                String email = googleDTO.getEmail();
                 HttpSession session = request.getSession();
                 UsersDTO dto = userDAO.checkExistedEmailGoogle(email);
                 if (dto != null) {
                     url = SUCCESS;
                     session.setAttribute("USER", dto);
-                    session.setAttribute("NAME", dto.getName());                  
+                    session.setAttribute("NAME", dto.getName());
                     session.setAttribute("MEMBER", dto);
                 } else {
                     int index = email.indexOf("@");
-                    String emailString = email.substring(0, index);
-                    dto = new UsersDTO(email, email, null, "member", null);
+                    String name = email.substring(0, index);
+                    dto = new UsersDTO(email, name, null, "member", null);
                     boolean check = userDAO.insert(dto);
                     if (check) {
                         userDAO.updateStatusActivate(email);
                         session.setAttribute("USER", dto);
-                        session.setAttribute("NAME", emailString);
+                        session.setAttribute("NAME", name);
                         session.setAttribute("MEMBER", dto);
                         url = SUCCESS;
                     } else {

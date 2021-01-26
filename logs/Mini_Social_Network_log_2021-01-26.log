@@ -1,0 +1,715 @@
+2021-01-26 15:55:19 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:19 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:19 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 0 of 100; total allocated: 0 of 200]
+2021-01-26 15:55:20 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 0; route allocated: 1 of 100; total allocated: 1 of 200]
+2021-01-26 15:55:20 DEBUG MainClientExec:235 - Opening connection {s}->https://accounts.google.com:443
+2021-01-26 15:55:20 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to accounts.google.com/108.177.125.84:443
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to accounts.google.com/108.177.125.84:443 with timeout 0
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=accounts.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [accounts.google.com, *.partner.android.com]
+2021-01-26 15:55:20 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+2021-01-26 15:55:20 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.100.56:51732<->108.177.125.84:443
+2021-01-26 15:55:20 DEBUG MainClientExec:256 - Executing request POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:20 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:20 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:20 DEBUG headers:133 - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:20 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 320
+2021-01-26 15:55:20 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2021-01-26 15:55:20 DEBUG headers:136 - http-outgoing-0 >> Host: accounts.google.com
+2021-01-26 15:55:20 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-01-26 15:55:20 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:20 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 320[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:87 - http-outgoing-0 >> "client_id=99357018574-f5rf0s8jifbd3jsdob9q7o04bmii7g8q.apps.googleusercontent.com&client_secret=y3r4Cz5LKSRirVH_2gJzyXw9&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FMiniSocialNetwork%2FLoginByGoogleController&code=4%2F0AY0e-g5qzHdq8qB5CCzTZkMmHuWk_bsJ3Xx90l4oadGxXpKN-R1ML6PzlHdboH9Qb6BzuQ&grant_type=authorization_code"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 26 Jan 2021 08:55:21 GMT[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "[0x1f][\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "[0x8b][\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "1[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "[0x8][\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "3c6[\r][\n]"
+2021-01-26 15:55:20 DEBUG wire:73 - http-outgoing-0 << "[0x0][0x0][0x0][0x0][0x0][0x2][0xff]u[0x92][0xcb]r[0xa3]:[0x10][0x86][0xf7][0xf3][0x14][0xa9][0xac][0x8f][0x13][0x81]Mbf[0x7][0x6]c[0xb0]%[0x8c][0xb9][0xb3][0xa1][0x0]q[0x11][0xf7][0x18]0[0x97][0xa9][0xf3][0xee][0x7]'[0x8b]Y[0x9d][0x85][0xaa]T[0xea][0xee][0xbf][0xfb][0xfb][~[0xbd][0xbc][0xbc][0x6]Q[0x14]w[0x9d][0xdf]7E\[0xbf][0xfe]~y[0x9d][0x3][0x9a]}[0xb][0x0][0x97][0x9c]>t[0xc8][0xa9][0xd8][0xa7]]&=[0xe9][0x9f][0xda][0xe7]M,T[0x80]\A[0xf5][0xf3][0xbc][0xe4][0xf0][0xbe]I[0xe7][0x89]M[0xcd][0xd0][0xa7][0xb][0xf5]t[0x90]n[0x9]%[\n]"
+2021-01-26 15:55:20 DEBUG wire:87 - http-outgoing-0 << "sx[0xbe][0x10][0xdf][0x8a]X8[0xb6][0x1b][0xfb][0xeb][0x80][0xf7] [0x9c][0xbf][0x0][0x1e][0xbc]rw[0xf6]4[0x5][0xf]-[0xbe], [0xca]?@W[0xe4]ze8[0xf9]ny[0x14][0xa7]:[0xd9][0xb6][0xbc]U[0xd7][0xd3][0xf9][0xb8][0xd0][0xe5][0xa7][0xb0][0x1f][0xf3][0xbb][0x89]u[0x15][0xc6]~z[0xdc]P[0x9e][0xfa][0xc8][0xe4]|R[0xeb][0xaf][0xc]$,[0xab]If|[0x8c][0xfd]@"e[0xdd][0xc2][0xd7][0x9e][0x1c][0xf1][0xd4][0x92]{[0xdc][0xf9][0xe4]I[0xb1]eX[0xf6][0xfb][0xb5][0x8b][0x9a]6~be}[0xdf]v[0xbf][0xdf][0xdf][0xc7]q|K[0x9b]&-[0xe3][0xa0]%[0xdd][[0xd4]T[0xef][0xc1][0xd0]g[0xef]C[0x17][0xdf]I[0x9d]4oq[0x15][0x90][0xf2]e[0xad][0xaa][0x9][0xfe]Q[0xfe][0xb6][0xc6][0xef][0xe7][0x1f]!>[0xe][0xee][0xf1][0xfd]'B[0xf0]_[0xdf][0xe2]Y[0xc9]B)"*Qts[0x91])D[0xe4]N[0xae][0xfa][0xd6];[0xc8][0x1f]re[0x95][0xae]q$[0xd0]v[0x1][0xcc][0xd3][0x11][0xd1][0xe2][0xce][0xa5][0xe1][0x4][0x17]/[0x83][0x2][0xca][0xe0]zG[0x95]6[0xab][0xf6][0x8d][0xa8][0x82][0xcc][0xa0][0xea][0x96]y9G.[0x7][0x5][0xc4][0xe][0xf7][0xd4]<[[0x94]F[0x12][0xed]mm[0xd3]F[[0xf8]|[0xca]\[0x1a]=[0xb0][0xcd][0x80]hf[0xea][0x90]f[0xeb]P2[0x7][0x97]f{[0x99][0x8c][0xc4]u[0xda]Q[0xce][0x1b][0xa2][0x1a][0xc5][0x82][0x8c]h[0x84]FJ[0xa1]E[0xeb][0xbd][0xdc][0x9a][0xbd][0x9c]_T[0xa9]m[0xbd]J) [0xdd].[0x9e][0xc4][0x12][0xd5][0x11][0xb7][0xe1][0xc2][0x1][0xb7][0xa2][0xda][0xc0][0xc0][0xb5]z[0x12][0x7][0xd7][0xe1][0xc7][0xbf][0xda][0x16][0x15][0xd1][0xd6][0xbc][0xea][0xf]X[0xb2][0x6]|`[0xf2][0x90][0x6][0xcf][0x11]3lk[0xeb]<2[0xa3][0x1a]p[0xed][0xc1]M[0xaa]`n[0xd1][0x81][0xaa][0x90][0xa3]T[0xf0][0x4]wAUVn[0xa5]-A[0x8d][0x8a][0x90][0x96][0x99][0xc8][0xc0][0xf]([0xdc]Hh[0x97]-[0xa2][0xa3]][0xa4]3Yt[0xe2][0x97]K[0x85][0x1f]![0x8d];[0xcf][0xb1][0x16][0xcf]QV}[0x6]x+[0xdf][0xa5]B[0x8f]P_[0xed][0xac][0x11][0xe5][0x92][0xd5][0xce]\\y[0x8a][0xdd][0xb3][0x17][0xca][0xe5][0xdd][0xca]H[0xa1]|[0xb5]SH'[0xf5][0x99]We[0xc5][0x93][0xdd][0xab][0xf9][0xb5][0xd6]*[0xb0][0xce][0xd0][0xe1][0xf7]:[0xac][0xde][0xb5][0xcb][0xee][0x19][0xb][0xa5][0xe3][0x10]JL[0x13][0xd1][0xe6][0x84][0x4][0x8e]A[0xf9][0x91][0xfb][0xbf]|g[0xeb][0x95][0xd1][0xca][0x10][0xd8][0xd6][0xaa][0xdb][0x82][0xa8][0xb6][0xca]o[0xee]#[0xdb][0xb8][0xe]j[0x9e]z[0xba]9[0x99]n%[0xd2]Q[0x9d][0x1][0xcb][0xdc][0xef]n'[0xc4]{[0x85]7[0xd8][0x5]+[0x9b][0xdf]3[0x95][0x19]^[0xbf][0x2]4[0xdc]i=[0x14]4[0xe0][0xc][0xf5][0x91]xN[0xf6][0xdc][0xd3][0xca]![0xae][0xc7][0x4][0xaa]!O[0xeb][0x9a][0x8d][0xc3]l[0xf5]v0[0x1f]2Z[0x99][0xaf][0x9a][0x1][0xf0][0xbd]tS=[0x5][0x5][0x94][0xc5][0xc7][0xc8]s[0x6];r[0xad][0xcb][0x1f][0xee][0xc9][0xd5][0xe0][0xe5]"
+2021-01-26 15:55:20 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 26 Jan 2021 08:55:21 GMT
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Vary: Origin
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Vary: X-Origin
+2021-01-26 15:55:20 DEBUG headers:125 - http-outgoing-0 << Vary: Referer
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << Server: scaffolding on HTTPServer2
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 0
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2021-01-26 15:55:21 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-0 << "[0xf0]SF9{[0xe6]'[0xc5][0xda][0xee]vD[0xe4][0x6][0xf]}[0x5][0xfc]^([0x90][0x13][0xb8][0xe][0xd9][0xa1][0xca]"[0x83][0x98]s^[0xc7][0xf3][0x13][0x1][0xcd]r[0xbe][0x8c][0xa0][0xde][0xc8][0xcc][0xc6]Ew[0x18][0xe2]Y[0xfc][0x8][0xec][0x87][\r][0x86][0x8b][0xb3][0xf7]Y=[0xd3].[0xd0]b9[0xc5]][0x8c].[0x95][0x5][0x1e]j[0xdc]#[0x11]6X_p[0xc1]@[0xfb][0xb1][0x8d]6[0xd7][0xbd]wp[0x9a]P[0xbd][0x9][0xb3][0xa2][0xb0]l[0xbc][0xbf]a[0xe0][0xf2][0xb4][0xe1][0x4][0xf1]isc/[0x19][0xdf]9'%[0xc9][0xe3]/[0xe5]\:[0xdc][0xf5]#[0xfa][0xb0][0xab]$[0xe0]g[0xcf][0x86])[0x96])|[0x1e][0xaf][0xdd]aS[0x93][0xce]h[0xf6][0x92][0xda][0x8b][0xeb][0x9f][0x1b]@[0xa3]A[0x8b][0xbd][0xad]4+`{[0x14][0x99]0;[0xe5]L[0x1a][0xdd]n}f%[0xaa][0x8f][0xba][0xd6]9[0x83]r[0x99][0x84][0xd9][0xb9][0x6][0xbb]N[0xd8][0xe2][0xbe]|[0xd0]#'%7Vp[0x9c][0xe6][0xf3][0x9a][0xc5][0x9c][0xd9][0xe][0x9c]7[0xac]&P[0xca][0x84][0xae][0xbe]_[0x6][0xd8]*[0x8f][0xb5][0xa2][0xbd][0xfe][0xfa][0xf7]?$[0xaf]e[[0xf4][0x4][0x0][0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:21 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+2021-01-26 15:55:21 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:21 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 200]
+2021-01-26 15:55:21 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:21 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:21 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 0 of 100; total allocated: 1 of 200]
+2021-01-26 15:55:21 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:21 DEBUG MainClientExec:235 - Opening connection {s}->https://www.googleapis.com:443
+2021-01-26 15:55:21 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to www.googleapis.com/64.233.189.95:443
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to www.googleapis.com/64.233.189.95:443 with timeout 0
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=upload.video.google.com, O=Google LLC, L=Mountain View, ST=California, C=US
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [upload.video.google.com, *.clients.google.com, *.docs.google.com, *.drive.google.com, *.gdata.youtube.com, *.googleapis.com, *.photos.google.com, *.upload.google.com, *.upload.youtube.com, *.youtube-3rd-party.com, bg-call-donation-alpha.goog, bg-call-donation-canary.goog, bg-call-donation-dev.goog, bg-call-donation.goog, upload.google.com, upload.youtube.com, uploads.stage.gdata.youtube.com]
+2021-01-26 15:55:21 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=GTS CA 1O1, O=Google Trust Services, C=US
+2021-01-26 15:55:21 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 192.168.100.56:51736<->64.233.189.95:443
+2021-01-26 15:55:21 DEBUG MainClientExec:256 - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMAOd_2Y5gHS7Q7REkO0NYDO_jjlAd8ogyx9gUb_2kOHCGRf1EDybKLi_Vc9Mwp-WqCd80byq0duZl4KZQJdupdLz0cj60skjSmTXj4zvkHnf3pBVnnxKFz2l7D8wjrUdSOMe_gF-1ZOvhIjxOnqh0f99QGUeFe_aGilnpM HTTP/1.1
+2021-01-26 15:55:21 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:21 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:21 DEBUG headers:133 - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMAOd_2Y5gHS7Q7REkO0NYDO_jjlAd8ogyx9gUb_2kOHCGRf1EDybKLi_Vc9Mwp-WqCd80byq0duZl4KZQJdupdLz0cj60skjSmTXj4zvkHnf3pBVnnxKFz2l7D8wjrUdSOMe_gF-1ZOvhIjxOnqh0f99QGUeFe_aGilnpM HTTP/1.1
+2021-01-26 15:55:21 DEBUG headers:136 - http-outgoing-1 >> Host: www.googleapis.com
+2021-01-26 15:55:21 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2021-01-26 15:55:21 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:21 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMAOd_2Y5gHS7Q7REkO0NYDO_jjlAd8ogyx9gUb_2kOHCGRf1EDybKLi_Vc9Mwp-WqCd80byq0duZl4KZQJdupdLz0cj60skjSmTXj4zvkHnf3pBVnnxKFz2l7D8wjrUdSOMe_gF-1ZOvhIjxOnqh0f99QGUeFe_aGilnpM HTTP/1.1[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Date: Tue, 26 Jan 2021 08:55:21 GMT[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Server: ESF[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x1f][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x8b][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x8][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x2][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0xff][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "M[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x8f][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "M[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0x8b][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0xc2][\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "0be[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "0[0x14]E[0xf7][0xfd][0x15][0xa5][0xeb][0xb1][0xed][0xf3][0xa3]6[0xc2][0xc0][0xcc]F[0x19]dP[0xc4][0x85][0xae]J'y5[0x19]bZ^^[0x14][0x14][0xff][0xbb]T[0x11]\[0xdf]s/[0xe7]^[0xa3]8N[0x8c]Jfq[0x2]9[0x88]r[0x9a]C1,[0x85][0x98][0x14]#[0xc8]K[0x10][0xc9]G[0xf][0xe0][0xb1]6[0xb6]gl[0xed][0xac][0xd3][0x1e]a[0x9c][0x8b][0x2][0xbe][0x9a][0x8e]ST!=[0xb9]'wB2[0x8d]AU[0xbd][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "L[0x1][0x1f]Ig$[0x7][0xc2]~C3w~[0x96]eV[0x8f][0xd2]C[0xdb][0x1e],[0x6][0x8f]$[[0xc7][0xe8]8[0x95][0xed]1[0xab][0x7][0xd9][0xf7]J[0xc3]x[0xa1][0xbd][0xe0][0x8b][0x9a][0x10][0x91][0xdd][0xc2]y[0xb9][0xff]][0xcb][0xcb][0xdf][0xb9][0xda][0xf0]R-[0x4][0xfd][0xcc][0xe9]?[0xec][0x9a][0xed][0xa7][0x17][0xc5]@>[\r][0xf4][0xe3][0xca][0x9b]Wt[0x8b][0xee][0xf2][0x87][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[0xac][0xe4][0x0][0x0][0x0][\r][\n]"
+2021-01-26 15:55:21 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Date: Tue, 26 Jan 2021 08:55:21 GMT
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Vary: Origin
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Vary: X-Origin
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Vary: Referer
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Content-Encoding: gzip
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Server: ESF
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << X-XSS-Protection: 0
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:21 DEBUG headers:125 - http-outgoing-1 << Transfer-Encoding: chunked
+2021-01-26 15:55:21 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "0[\r][\n]"
+2021-01-26 15:55:21 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:21 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+2021-01-26 15:55:21 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:21 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:32 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:32 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:32 DEBUG wire:87 - http-outgoing-0 << "[read] I/O error: Read timed out"
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:32 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:32 DEBUG MainClientExec:256 - Executing request POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:32 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:32 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:32 DEBUG headers:133 - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 320
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-0 >> Host: accounts.google.com
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 320[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:87 - http-outgoing-0 >> "client_id=99357018574-f5rf0s8jifbd3jsdob9q7o04bmii7g8q.apps.googleusercontent.com&client_secret=y3r4Cz5LKSRirVH_2gJzyXw9&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FMiniSocialNetwork%2FLoginByGoogleController&code=4%2F0AY0e-g7CeNUqXy2yLk89XBgKeow1JIDGGCvA4lGKopRfbtyx5gBtr1mof1rNNOD4_32b8Q&grant_type=authorization_code"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 26 Jan 2021 08:55:33 GMT[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x1f][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x8b][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x8][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x2][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0xff][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "E[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x93][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0xc9][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x8e][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0xab][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "H[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x10][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "E[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "0000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0xf7][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "3b0[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0xef]+J[0xb5]n[0xaa][0x0][0x1b][0xdb][0xbc][0x9d][0xc1][0x80][0xa1][0xc8]d[0x1e]7[0x16][0x93][0x19][0x13][0xb0][0x99]i[0xf5][0xbf]7[0xae]j[0xf5][[0x84]2[0x15][0x91]:[0x11][0xf7][0x86][0xf2][0xef]_oo[0xef]A[0x14]%]w[0xeb][0x9b]2[0xa9][0xdf][0xbf][0xbd]/[0x1]I[0x4][0xf8][0xf9]~=[0x18][0xe0]r[0xfc][0xb2][0xb9][0xb6][0xce][0xb1][0xa8]&\[0xaf][0x1a][0xa2][0x85][0xb6][0xf8][0xb8]^[0xb1][0xfd]<[0x80][0x98].[0xce]x[0xe9][0xb3][0x9c][0xbc][0xb7][0x96]'[0xc0][0xf7][0xb8][0xc6]Y[0x1d][0x92][0x91]e[0xa9][0xa7][0x1b]&[0xd1][0xb5]0F[0xe2][0x93][0x92][0x85]8[0x9e][0xdc][0xac]3[0xb2]J`E[0xcb][0x84]T[0x8f][0x4]N[0xd6][0x15][0xec][0xc1][0xd8][0xf0][0x91]"[0xb3][0xe0][0x94]%[0x13]GFD[0x8b].w[0xe1]Pjj0J[0xee][0xad]X@}[0xd0][0x92]%|[0xfa][0x89][0xf9]8[0xb8][0xfd][0xf1][0x81][0x1d][0xaf]I[0xbd][0xd3]\[0xad][0xcd][0x4]hKk|>[0xbd][0xff][0xf5][0xd2][0x91][0xcc]m[0xfe]L[0xba][[0xfe]R[0xb1][0xa3]h[0xfa];[0xdb]EM[0x9b][0xbc]dmG[0x9d][0xc7]oY[0xdf][0xb7][0xdd][0xef][0xcf][0xcf]i[0x9a]>[0xd2][0xa6]I[0xab]$h[0xf3][0xee]#j[0xd0]g0[0xf4][0xd9][0xe7][0xd0]%[0xcf][0xbc][0xbe]7[0x1f][0x9][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0xf2][0xea][0x87][0xfc]m[0xcd][0xad]_~@L[0x12]<[0x93][0xe7]O%[0x8f][0xff][0xf8][0x96],R[0x16][\n]"
+2021-01-26 15:55:32 DEBUG wire:87 - http-outgoing-0 << "Q[0xae][0xe4][0x92]a[0xad]"[0x1]s[0xb1][0x13]Q[0xdf][0xfa][0xac]x[0x10][0x91]]y&[0x9f][0x3][0xc7][0xc3]A[0x91]N[0x90][0xe4][0xf6][0x1e][0x9]f[0xb0][0xfa][0x19][0xb8][0xc0][0xc]lw[0x88][0xb4]Eq[0xf4]\[0xb9][0x88][0x14]Dz[0xe6][0x17][0xe7]\f%<q[0xcf]/[0xe6][0x97]Mh[0xf9]][0xfb][0xd8][0xda][0xb4][0xd1][0xe][0xbc]R[0x99]G[0xc2]1v(<Z[0xa8]:$[0xe9]:[0x14][0xac][0xc1]#[0xe9]^[0xcc][0xa7][0xdc]s[0xdb]I,[0x9a]\1[0xcb][0x15][0x9a][0xd1][0x4][0xcc][0x94][0x80][0xab][0xd6][0xfb][0x85][0xbd][0xf8][0x5][0xb3]*B[0xdb][0xfa]H*[0x1][0xd9][0xae][0xbe]@[0xe7][0x8a][0xcb][0xed][0xc2][0xf5][0x8c]{[0x88]h[0x3]3[0xae][0x95]+7x.3[0xfd]a[0xdb]DD[0xda][0xcb][0xc6][0x1f]b[0xc1][0x1e]b[0x96]*B[0x12][0x8d][0x98][0xc5][0x8e][0xb6][0xcd]#R[0x8a][0x9][0xb6][0x1e][0xe7]Y[0xb9]X;[0xc8][0x12][0x8][0xba][0x12][0x2]W[0xb0][0xf]P[0x85]<[0xa4][0xad]A[\r][0xcb][0x90][0x14][0xa9][0xc8][0x8c]Gp[0xd1][0xf3][0xd0][0xa9]ZHF[0xfb][0xc8][0xa0][0xb2][0xe8][0xca][0xac]2[0x8a][0xc7][0x90][0x8c]"
+2021-01-26 15:55:32 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 26 Jan 2021 08:55:33 GMT
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Vary: Origin
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Vary: X-Origin
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Vary: Referer
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Server: scaffolding on HTTPServer2
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 0
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2021-01-26 15:55:32 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << ";[0xdf][0xb5]W[0xdf][0x95]6>[0x85][0xfb][0x9b]>[0x19][0xc1]146;kHx[0xf9]fg[0xc1]M[0xa0][0xb0]pX[0x9c]w[0x8a][0xb9][0xd9]ij[0x14][0xbc]X[0x9b][0x9d][0xd1][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[0x96][0x97][0xed]v[0xef]9U[0xf7][0xd2][0x1f][0xd7]6[0x1e]\[0xed]:p[0xf8][0xc1]_E[0x12][0x98][0xe7]I[0x13][0xe2][0xef][0xfa][0xff][0xdc][0xff][0xde][0xbb];[0xbf][0x8a][0xb6]Y[0x3][0xc7].[0xc5][0xa2][0xc5][0xa3][0xda][0xae][0xbe][0xf5][0xf1]t[0xe3][0xb9][0xb0]y[0xf1]B[0xa1][0xec]a[0xe5][0xcd][0x86][0xad][0x13][0x1]g[0xaf][0xb0][0xe0][0x9]] *[0xbd][0xec]}[0xeb][0x9b]Ue[0xf1][0xb6]r`z[0xf3][0x16][0x4]0[0xc1]6[0xd3][0x94][0xfb]n[0xf6][0xda][0xc7][0xc][0xb]n[0xb][0xb][0xdf][0xbc]Z[0xb7]u[0xf6][0x97]T[0xcb][0xc6][0xca]V<[0x82][0xa8][0xd9]R[0x8d]o)[0x89][0xee][0xf][0xe7][0xe2]H[0xbd][0x1d]&[0xf][0xac]*[0xfb][0x99]=[0xde][0xba][0xe6][0xb8][0xbf][0x1e][0xc2]V[0xd3]z[0x88][0xdb][0xcc]:[0xab].[0x1b][0xdc][0xba][0xdb]y[0xa4][0x1f]=[0xf][0x0][0xc6]I[0xb0][0xba][\r][0xc1][0x95][0x1d][0xd9][0xaf][0xbd]l[0xbb][0x94]![0x9e]eEa[0xf]P[0x8d]$[0xd8]XO<[0xc5]V[0xbd]w[0xd8][0xe5][0xbe] |[0xb9][0xd8][0xaa]NU![0xde]w[0xa7][0x8a][0xd1]L[0x12]Q_\GZ)[0x83][0xf1]l(Z[0xb2][0xdf][0x9c]8[0xff]8KE[0xee][0xa5]=G[0x1b]w[0xf2][0x1e]T[0xdd][0xa8][0x8d]bp"[0x14][0xe2][0xa1]=[0xcc][0xa5][0xc]k[0xa9][0xb9][0x9b][0xd8][0x9d]V[0xca]@[0xde][0xf5][0xca][0x9e][0xa1][0x10]s[0xf7]S[0xc0][0xab][0xb0][0xae];q[0xb1]D[0x8a]Bu[0x96][0xea][0x8d][0x9e][0x93]1y,[0x1d][0xcc]x[0xc8][0xfc][0xf5]P[0xf0][0x8c][0x1f][0x6][0xb3][0x1c][0xe3][0x9e][0x8f][0xed]=Pa)_0[0x19][0x8b][0xa9][0x7][0xf9]X[0x1e][0xda][0xec](E^[0xc2][0xba][0xca]l[0xd5]h[0xde][0x1d][0xe4][0xf2]D[0xea][0xcc][0xbe]5[0x86][0x13][0xdf][0xec]T[0xc3][0xfe][0x9a][0xc][0xeb][0xa6]vj[0xa2](V4[0xf1][0xcf]D[0xcf][0xd2][0xed]g[\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << ":[0xd7]([0xea][0xf4][0xfe][0xeb][0x9f][0x1]g0[0x1d][0x7][0xdc][0x4][0x0][0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+2021-01-26 15:55:32 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:32 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:32 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:32 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:32 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:32 DEBUG MainClientExec:256 - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMD7KVEpni-cn1XYlucy9UFdnz-4xuMd9jA0kZCEL4UyrM040QEUsmLmUUP8_-J9nGvcIr5LGddwXhsShlGCIUTN5tmGELRO-qBVNqgmTjEOyhIvBImyRLsbukQPavJX_jyMn6QeybrZeTq6Xt7q-7Hen3QXQphGNVJzdA8 HTTP/1.1
+2021-01-26 15:55:32 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:32 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:32 DEBUG headers:133 - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMD7KVEpni-cn1XYlucy9UFdnz-4xuMd9jA0kZCEL4UyrM040QEUsmLmUUP8_-J9nGvcIr5LGddwXhsShlGCIUTN5tmGELRO-qBVNqgmTjEOyhIvBImyRLsbukQPavJX_jyMn6QeybrZeTq6Xt7q-7Hen3QXQphGNVJzdA8 HTTP/1.1
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-1 >> Host: www.googleapis.com
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:32 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMD7KVEpni-cn1XYlucy9UFdnz-4xuMd9jA0kZCEL4UyrM040QEUsmLmUUP8_-J9nGvcIr5LGddwXhsShlGCIUTN5tmGELRO-qBVNqgmTjEOyhIvBImyRLsbukQPavJX_jyMn6QeybrZeTq6Xt7q-7Hen3QXQphGNVJzdA8 HTTP/1.1[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Date: Tue, 26 Jan 2021 08:55:33 GMT[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Server: ESF[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x1f][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x8b][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x8][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0x2][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[0xff][\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "0ac[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "M[0x8c][0xbd][0xe][0x82]0[0x18]Ew[0x9e][0x82]t[0x16]Z([0xff][0x93][0x84][0xc9][0xc4][0x5][0x89][0xae][0x86][0xc0]G[[0x2][0xb4][0x81][0x96][0xc5][0xf8][0xee][0xa6][0x1a][0x8d]w[0xba][0xc9]=[0xf7]<[0x1c][0xd7]E[0xa2]G[0x85][0x8b][0x2][0x12][0xc6]QB[0xd2]<#q[0x94]Gq@SJ[0xd1][0xc1][0x2]0[0xb7]b[0xb2][0xcc]n47L[0xb4][0xb][0xb][0x93][0x80][0x90]#[0xb3][0x83][0xdf][0xc9][0xf9][0xc3][0xed][0xb0][0x8a]A@[0xff][0x1e][0xf4]j[0xe0][0xbd]([0xd1]i[0xb3][0x82]up[0xad][0xd5]V`<q[0xea]3)[0xd9][0x4]f[0x83][0xb5][0x93][0x8b][0x86]E[[0x17][0xf6][0xb2][0xba]J[0x9a][0xfa][0xbc]o[0xb7]+.9[0xfd][0xf5][0x12]_[0x9a][0xd9]3#[0x90][0xa1][0xca][0xb0][0xe2]RKT[0xc]9O[0xe7][0x5]Y[0x18].z[0xd3][0x0][0x0][0x0][\r][\n]"
+2021-01-26 15:55:32 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Date: Tue, 26 Jan 2021 08:55:33 GMT
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Vary: Origin
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Vary: X-Origin
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Vary: Referer
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Content-Encoding: gzip
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Server: ESF
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << X-XSS-Protection: 0
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:32 DEBUG headers:125 - http-outgoing-1 << Transfer-Encoding: chunked
+2021-01-26 15:55:32 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "0[\r][\n]"
+2021-01-26 15:55:32 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+2021-01-26 15:55:32 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:32 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:43 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:43 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:43 DEBUG wire:87 - http-outgoing-0 << "[read] I/O error: Read timed out"
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:43 DEBUG MainClientExec:256 - Executing request POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:43 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:43 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:43 DEBUG headers:133 - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 320
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-0 >> Host: accounts.google.com
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 320[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:87 - http-outgoing-0 >> "client_id=99357018574-f5rf0s8jifbd3jsdob9q7o04bmii7g8q.apps.googleusercontent.com&client_secret=y3r4Cz5LKSRirVH_2gJzyXw9&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FMiniSocialNetwork%2FLoginByGoogleController&code=4%2F0AY0e-g7qR8c0GiDl7VDMyvXjbxg2iyxOm7Ucez9KoN95sv3adjPHsywssdqL1NDygCkcAw&grant_type=authorization_code"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 26 Jan 2021 08:55:43 GMT[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[0x1f][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[0x8b][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "00001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[0x8][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "3b9[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[0x0][0x0][0x0][0x0][0x0][0x2][0xff]E[0x91][0xc9]r[0xab]H[0x10]E[0xf7][0xef]+[0x1c]^[0xb7]e@ [0xc4][0xdb]I[0xc]b*[0x10]bf[0xa3]`([0x89]BLf[0x86][0x8e][0xfe][0xf7][0x6]{[0xe1]EETeE[0xde][0xbc][0xf7][0xe4][0xbf][0xde][0xde][0xde][0xc3]8[0x86]m{[0xef][0xaa][0x17],[0xdf][0xff][0xbe][0xbd][0xcf]![0xc1][0xec]B[0xec][0xf4][0x10][0xf]&[0xe0][0xa2][0x8a][0xc9][0xf6][0x1][0xd4][0xb5][0xcc][0x19][0x17]4[0xcc][0x94]2~[0x4]S[0x13][0xeb][0xa2][0x8f][0x88][0xc7][0x93][0x85]F)g[0x7]@[0xdb][0xfa][0x97][0x17][0xca]3[0x8a][0xea][0x92][0xac]`[0xf][0xac][0x8c][0x94][0x8f]\[0x2][0xdb][[0xe9][0xb0]<y[0xe0]{[0x6]T[0x7]</[0x87][0xa2];-g][0xb1][\r]vz[0xe6]H)[0xb1]+[0xc6][0xc]1[0x14][0xa4][0x9b][0xdb][0xee][0xad][0xd9][0xf4][0x87][0xf3][0x17]9[0xfa]*[0xbc][0xd3][0xd0]v[0xbb][0xf9][0xd1][0xdc]UR[0xfb][0x18][0x2]Q[0xc8][0xed]z[0xb9][0xfb]d<[0xc6][0xd9][0xb5]R[0xe3][0x10][0xdb]gLC[0xd8][0xef][0xff]l9[0xe0]T[0xa3][0x6][0xb6]w[0xb4][0xa5][0xd8]S[0xc][0xf3]]m[0xe3][0xaa][0x86][[0xac][0xb4][0xeb][0xea][0xf6][0xef][0xe7][0xe7]8[0x8e][0xbb]gU=s[0x18][0xd6][0xa8][0xdd][0xc5]U[0xf1][0x19][0xf6]][0xfa][0xd9][0xb7][0xb0]A[0xe5][0xa3][0xda][0xc1]"D[0xf9][0xdb][0xda]U[0xa2][0xe4]G[0xf9][0x1b][0xcd][0xbd][0x9b][0x84][0xce]0l`[0xf3][0xf3][0x83][0x92]_np[0x96][0xd3][0xe8][0x12]#[0x1d][0xc9][0xa6][0xbd]H[0xb8][0x86][0xa4]V*[0xba]:`[0xa5][0x83]T8[0xb9]o[0x9][0x8][0xb8]>[0x6][0xb2][0xe7][0xa8][0x11]<[0xe9][0x13]`[0x2]K[0x90][0x2]NK[0xc1]z[0xd7][\n]"
+2021-01-26 15:55:43 DEBUG wire:87 - http-outgoing-0 << "c[0xd6][0xdd][0x1b][0xd2]9[0x89][0xd2][0x8a][[0x1a]d'[0xa4][0xb2]2[0x6][0xbd][0xd3][0xa6][0xa9]8[0xb8][0x81][0x1e][0xc6]n[0x1d]S[0xc7]{[0xb0][0x95]R[0x9f][0xd0][0x86][0xc4][0xa5][0xb0]x[0xa6][0xca][0x88]`[0xca][0xe8]b[0xf7]>[0xc1]t[0x12][0x1a][0x91][0xef][0xd5][0xa3][0x94]UH[0xb7]^[0x8b]f[0xc5]#[0xb0][0x9e][0xb8][0xb6][0x18]][0x90]9s[0x90][0x9d][0x17][0xfd]R[0xd7]A![0xbf][0x0]Q/[0xc1][0x85]A[0xba][0xc7][0xef][0xa3][0xe5][0x84][0xf9][0x5]^[0x87]VR[0xea]"[0xdf][0xfb][0xde]y[0xfc][0xd5]v[0xf0][0x98]p[0xe6]U[0xbf]O.N[0x9f][0xb0]T[0x16][0x11][0xd8]f1M\c[0xf5]#Q[0xba][0x5][0xd6][0x19][0xa7]I[0xe7][0xec][0xbd][0xc6][0xe2][0x85][0xe6][0xc9][0x5][0x10][0x1][0x19][0x16]y[0xe1][0x17][0xc6][0x12][0x96][0xda]+"$*[0xb6][0x92][0x1]p7[0x14][0xb9]y[0xad][0x11]1[0x19][0x9b]T[0x1a][0x8b][0xe7]E-[0x92]!"[0x92]6[0xf0][0x9c]%[0xf0][0xe4]U[0x9f][0xc2][0x82]5[0x9f]ZhCd[0xae]8K[\r][0xf7][0xd1][0x8a]3[0xe3][0xd7]<+[0x5][0xeb]5[0xe9][0x96][0x84][0xe9][0x1c]?k[0xb][0xbf][0xbe][0xc1][0xf8][0x83][0xdd][0xe9]|7o[0xb7][0xfc]!![0x1c][0x12][0x97][0xc9][0xa0]'[0xe3]1v.#W[0xa8][0xa3]_[0xef][0xf9][0xf7][`[0x88]u[0xde][0xca]#[0xcf][0xb7]u%[0xa2][0x8c][0x7][0xe6][0xc6][0xf0][0xf6][0x8]/[0xc2][0x12]n+|[0xbd]:[0xcb][0xc5]1[0xdd]N[0xd2][0xd0]J[0x9d][0x10]K[0xe5][0x8][0x9b][0x96][0x98][0x90]F[0x87][0xe7]7[0xad][0xda][0xf7]V[0xe][0x19]O[0x0][0x8b]'4[0x8b]_4[0xe]l^[0xc8]x[0xed][0x7][0x96]?[0xad][0x7][0xd7][0xb8][0x17][0x6][0xf6][0xd8][0xce]]8[0xf9]C[0xc3]bE8[0xaa]I[0xc6][0xbf][0x4][0xc7][0x1d][0x8e][0xfc][0x97]m[0x1e]&[0xdd]yx[0xdc][0xf0]`[0xb9][0xd7]tLe.%[0xa1][0xf1]4[0xa3][0xec]v[0xe6][0x1a][0xfc][0x8][0xf0]"
+2021-01-26 15:55:43 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 26 Jan 2021 08:55:43 GMT
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Vary: Origin
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Vary: X-Origin
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Vary: Referer
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Server: scaffolding on HTTPServer2
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 0
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2021-01-26 15:55:43 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[0xa0][0xeb][0xf]v[0xf3]86vCG[0xa1]h[0x16]J2gS[0xe5].hTS[0x8c]m[0xb4][:[0xc1][0xcb][0x15]=[0xf0][0xca][0xe8][0xcb][0xea]e[0x9d][0x9b]k'_K[0x98]WIN_'[0xed][0x86][0xdf]A[0xe9]I[0xc8][0xe9]3y([0xad][0x7][0xeb]L[0x13][0xdb]2'[0xd5][0xe1][0x9a]Z[0xb8]N[0xd9][0xa0]*[0x6][0xf1]|v[0xc5]r@&M[0xc9]R[0x89][0x1b][0x3]M=[0x15][0xb9]w[0x17]2[0x97]MN[0xac][0x96]}[0xd1][0xdf]H[0xeb]zA*r8[0xcb]$?[0xca]QfY$[0x9f][0x95][0xb0]D}[0x8b][0xfb]9*b[0x82][0xa6][0xb9]#}[0xa7]{[0x2][0xfb][0xc8][0xf3][0xbe]s[0x8e]c[0xd7]yGeVBP[0xf5]d[0xb3][0xaf]0z[0x8c][0x9c][0xf3][0xc8][0xc5]bo[0x88]_[0x9][0xd2][0xe9][0xfa]z$[0x4][0xc5]][0x4][0xd8][0xd1][0x1e][0x1c][0xf3][0xe6][0xd0][0xf3][0xf6][0x84][0x87][0x96]J{[0xb8][0x1e][0xa2]@[0x87]j[0xb4][0x88][0x9]6L[0xd2][0xe1][0xab][0xe][0xa1]c0RR[0xf5][0x9]l[0x8c][0xf7]?[0xff][0xfd][0xf]tO]([0xd5][0x4][0x0][0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+2021-01-26 15:55:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:43 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:43 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:43 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:43 DEBUG MainClientExec:256 - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMDbo9j3ZeONjVwzivy5Kw-ZxrcOHYi2fgCeQnJj6M7UOqXaJyibpn4oeuMTj4J8DdesRnVCE46Eu9Mo61lnvmtAzBOKUQCxgliKn0P09vceFIRWs3TySYvBq4wYLe_7eUWtyfr_L4N-vZHFlUpz_Y4cwcjPoLca03j9r2U HTTP/1.1
+2021-01-26 15:55:43 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:43 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:43 DEBUG headers:133 - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMDbo9j3ZeONjVwzivy5Kw-ZxrcOHYi2fgCeQnJj6M7UOqXaJyibpn4oeuMTj4J8DdesRnVCE46Eu9Mo61lnvmtAzBOKUQCxgliKn0P09vceFIRWs3TySYvBq4wYLe_7eUWtyfr_L4N-vZHFlUpz_Y4cwcjPoLca03j9r2U HTTP/1.1
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-1 >> Host: www.googleapis.com
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:43 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMDbo9j3ZeONjVwzivy5Kw-ZxrcOHYi2fgCeQnJj6M7UOqXaJyibpn4oeuMTj4J8DdesRnVCE46Eu9Mo61lnvmtAzBOKUQCxgliKn0P09vceFIRWs3TySYvBq4wYLe_7eUWtyfr_L4N-vZHFlUpz_Y4cwcjPoLca03j9r2U HTTP/1.1[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Date: Tue, 26 Jan 2021 08:55:44 GMT[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Server: ESF[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x1f][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x8b][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x8][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x2][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0xff][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "5[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0xcc][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0xbb][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0xe][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x82][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "0[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x18][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0x5][\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "0ab[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0xe0][0x9d][0xa7] [0x9d]U([0x10]jILt[0xc0]K[0x18]\[0xdc]I)[0xbf]PA[0x8a][0xa5][0x5]/[0xf1][0xdd]M5[0xae][0xe7]|[0xe7][0xbc][0x1c][0xd7]E[0xa2]D[0x89][0x8b][0xb0][0x8f][0x9][0xc1][0x14][0xd3] Z[0xe2][0x80]`[0x82]C?F3[0xb][0xe0][0xca]DkM[0xc3][0x9e]F[0xf2][0x87]2[0xc3][0xba][0xb2][0xd9][0x82][0xcb][0xeb][0x8f][0x8c][0xa0][0xc4]Y@[0x99][0xff][0xad]V[0x6][0xbe]M/[0xb8]6[\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[0xec][0xbc][0xd6][0xba][0x1f][0x12][0xcf]k[0xeb]pQIY[0xb5]`[0x6]P\v[0x1a]:m[0xbf]<6[0xf7]6[0xc7][0x1a]G;[0xb1]M[0x83]{[0xbe][0xa4][0x7][0xb9]#[0xc5][0x89][0xb1][0x14][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "Bo[0x85]T[0xd9]~[0x9a] [0x1a]/4k[0xd4][0xb3][0xdf][0xac][0x6][0x1a][0xcf]9r[0xde][0xce][0x7][0xc7]D[0x11]w[0xcb][0x0][0x0][0x0][\r][\n]"
+2021-01-26 15:55:43 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Date: Tue, 26 Jan 2021 08:55:44 GMT
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Vary: Origin
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Vary: X-Origin
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Vary: Referer
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Content-Encoding: gzip
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Server: ESF
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << X-XSS-Protection: 0
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:43 DEBUG headers:125 - http-outgoing-1 << Transfer-Encoding: chunked
+2021-01-26 15:55:43 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "0[\r][\n]"
+2021-01-26 15:55:43 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+2021-01-26 15:55:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:43 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:47 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:47 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:47 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://accounts.google.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:47 DEBUG wire:87 - http-outgoing-0 << "[read] I/O error: Read timed out"
+2021-01-26 15:55:47 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:47 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:47 DEBUG MainClientExec:256 - Executing request POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:47 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:47 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:47 DEBUG headers:133 - http-outgoing-0 >> POST /o/oauth2/token HTTP/1.1
+2021-01-26 15:55:47 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 320
+2021-01-26 15:55:47 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2021-01-26 15:55:47 DEBUG headers:136 - http-outgoing-0 >> Host: accounts.google.com
+2021-01-26 15:55:47 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2021-01-26 15:55:47 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:47 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "POST /o/oauth2/token HTTP/1.1[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 320[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "Host: accounts.google.com[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2021-01-26 15:55:47 DEBUG wire:87 - http-outgoing-0 >> "client_id=99357018574-f5rf0s8jifbd3jsdob9q7o04bmii7g8q.apps.googleusercontent.com&client_secret=y3r4Cz5LKSRirVH_2gJzyXw9&redirect_uri=http%3A%2F%2Flocalhost%3A8084%2FMiniSocialNetwork%2FLoginByGoogleController&code=4%2F0AY0e-g7X853N6EXHf-1bZ3_sCImi60cHWEhcO1Yd1-ruSSpv06otZc1qidWT0ad4qbJzKQ&grant_type=authorization_code"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 26 Jan 2021 08:55:48 GMT[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Server: scaffolding on HTTPServer2[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x1f][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x8b][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x8][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x2][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0xff][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "E[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x91][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0xcb][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "r[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "00001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0xab][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "3af[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "8[0x10][0x86][0xf7][0xe7])RY[0x8f][0x13][0x1][0xc1][0x9]g[0x87]o\l[0x9]cs[0xd5][0x86][0x2][0x81]A[0x18][0x1]6[0x98][0xdb][0xd4][0xbc][0xfb][0xe0]dj[0xce][0xa2][0xab]U[0xdd][0xaa][0xaf][0xfb][0xff][0xfb][0xef]_//[0xaf]!!I[0xd3][0x4]muM[0xca][0xd7][0xdf]/[0xaf]c[0xc8]Ko![0x90]/[0xea][0xf2][0xc]e[0xae]T[0x93][0xf5]'[0xd7][0x1d][0xac][0xa3]x[0xf5][0xc9][0xe5][0xb6][0xf2] [0xa1]r][0xdc][0xf7][0xc9]1[0xb1][0x1b]~[0xc4][0x1e]h>[0x1d]h[0xdf]).X[0xf4]X[0x8b][0xea])E%R[0xb4][0xe3]b[0xc7][0x95]^[0xbe][dr[0xee][0xf8][0x5]^m[0xc7])[0xbc]j[0x3][0xd0][0xdb]e:[0xf1][0xa5]Zp[0xfc]"[0x8c][0xc2][0x8b]C[0xe][0xbd][0xb3]i[0xf6]f[0xe0][0x8f]Z[0xc6][0xf2][0xd1][0x6]z[0x17][0xde][0x12]aW[0xdf][0xe4]c[0xc0]@[0x80][0xbf][0xee]@[0x96][0x16][0xab]f[0xb3][0xe7][0x97]vY[0xc7]F[0xd1][0xc8]FfY[0xbd]zH[0xaa][0xd7][0xbf][0x9e]:[0x92][0xa1][0xa6][0xf7][0xa4][0x9][0xe8]S[0x85] J[0xd2]w[0xb5]!U[0x9d]<e[0xcd][0xa9][0xa4][0xf1]K[0xd6][0xb6]u[0xf3][0xfb][0xfd][0xbd][0xef][0xfb][0xb7][0xb4][0xaa][0xd2]"[0x9]k[0xda][0xbc][0x91][0x8a][0xbd][0x87][0x8f]6{4[0xc9][0x9d][0x96][0x97][0xea]-a!-~[0xc8][0xdf][0xd6][0x4][0xed][0xf8][0x3]Z%[0xe1]=[0xb9][0xff]th[0xfc][0xc7][0xb7]d[0xd4][0xb3]H![0xd4][0xa0][0xfa][0xd9][0x9e]4[0xe]Q[0xad][0xd1]X[[0xe3][0xb5][0xb6][0xd4][0x98]S[0xf8][0xd6][0x8e]B[0xd7][0x7]0O{[0xc4]o?|[0x1e][0xe]p[0xc2][0x19][0xdc][0xa0][0xc][0xce]o[0xc4][0xcc][0xd1]pO[0xd4][0xd8]h"b[0xa7][0xc][0xe7]2=[0xac]u[0x90]x[0xf2][0x93][0xb9]w8[0x93]^[0xcc][0xb7]yLM[0x4][0xf8],e>[0x8f][0xba][0xd8][0x15][0x1][0x19][0xc5]2[0xe2][0xa5]2R[0xec][0x87][0xcf]K[0xad]F{[0xea]{u[0xaf][0xe5][0x15]5[0xac][0xeb][0x84],[0xd2]C+[0xe5][0xd0]d[0xb6]8wF[0x9c][0xaf]&C[0xa9]k[0xcc][0xf4]+[0xe4][0xeb][0x9]+[0x12]5[0xbc][0xad][0x10]M2[0xf0][0x19]W[0x87]V\[0x1a][0xea][0xf6][0xe1]{[0xab][0xfe][0xf][0xdb][0xe1][0x8][0xef][0x8c]3[0xff][0x11]+[0xce]#^[0x8b]y[0xc4][0x83][0xe7][0x8a]Y[0xec][0x9a][0xf3]>[0x9a]hXp[0x9e]![0xf][0xc6][0xc6][0x16][0xd0][0x9a]c[0xc8][0xd3][0x19]T[0xe1]G[0xc8][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0xe6]3s[\n]"
+2021-01-26 15:55:48 DEBUG wire:87 - http-outgoing-0 << "Kt[0x8d]xM$V[0xdc][0xc1][0xcd][0x89]FnQ#[0x9e]|[0x90][0xb3][0x98][0x11]u5[0x1d]X[0xdc]E|[0xdc]`[0xcf][0x99][0xb0][0xa7][0xcf]|[0x11][0xe0]Y[0xdf][0x81][0xa1].:[0xcf]v[0x96][0x88][0xf3][0xe9]lg[0xbe][0xed]an[0x3][0x94][0xcb][0x82]a[0xcd]vZ[0xa6][0x88]6[0xf6]l'[0x99][0xe0][0xf8][0xb4][0xdd]i}[0xb7]h"
+2021-01-26 15:55:48 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Pragma: no-cache
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 26 Jan 2021 08:55:48 GMT
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Vary: Origin
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Vary: X-Origin
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Vary: Referer
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Content-Encoding: gzip
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Server: scaffolding on HTTPServer2
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << X-XSS-Protection: 0
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2021-01-26 15:55:48 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[0x9e][0xfa][0xe3][0xd2][0x1][0xa1][0xea][0x94][0xa1][0xbb]{[0xe0]I[0xe3][0xa1]%[0xf7][0xa6][0x12][0xf7][0xff][0xe7][0xfe][0xf7][0xdf][0x13]pA[0xe6]]C[0xd7][0xb9]jy[\r]H[0xe9][0x14][0xdf][0xfa]vR[0xe5]{[0xa8][0xfa][0xe6][0xb9][0xa7][0xe3])[0x8f]Ks[0xd6][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "Y1F[0x94];F[0xae][0xee][0x85][0xea][0xa9][0xb3][0xbf]YE[0x16][0xcf]'[0x87][0x96]?[0xcc][0xc1]A[0xb][0x2]c[0xdd]S[0xec]e[0xcf]{[0xc]([0xdf][0xce]a[0x3][0xc3]2?[0xe6]sn[0x90][0xe1][0xe4][0xd6][0xc2]t[0xf7]Q[0xb0][0xb9][0xc5][0xe]S[0xa8]D#[0xbf][0xb8][0xda];[0xda][0x7][0xb7]3[0x98][0x88][0xd2]%2[0x9f][0x9f][\r]`[0xcb]C[0xac]^[0xd2][0xb0][0xbf]/[0xf]<[0xd0]Q[0xc4]'[0xae]c[0xc8]_[0x80]/?[0xcb]r [0xf2]J[0xcc][0xf0] d[0xec][0xb3]Vj8h][0xf9]`[0xa4]8-P[0xdb]i[0x1f]R[0xb4]^Q!o[0xac][0xb][0xc9]m[0xbc]B[0xde][0xb4][0x86]7[0xa8][0xef][0xdb][0xa8][0x7][0x94]/[0xf4][0x9d].X_XB[\r]1[0xcf]Q[0xb]/&[0x1e][0xe9][0xc1];[0x17][0x93][0xd9][0xb]@[0xc6][0x1b];R[0xe6][0xda][0x9e]7[0xd4][0xa9]O[0x8f][0xc3][0xf2],-[0x8e]6[0xd2]F[0xa1]n[0xce][0xdd][0x86].[0xca]c[0xbb]z[0xe4][0xbe][0x15]|[0xe6][0x99][0xb5][0xfc][0xbc][0x82][0xa5][0xe2]a'+[0x2][0xcd] ;[0xa2][0xc]7N8[0x9f]xw+[0xec][0x93][0x8f]c[0xb5]S[0xdb][[0xbb][0xb][0x13][0xc][0x98]+][0xbd]0[0xb8]=[0xfc][0xbb][0xde][0xb5][0x93][0xe1][0xf]wr[0xcb][0x94][0x8d][0x6]R\h[0xcb]v<T~Z[0xaf][0x98][0xaf][0x86] [0xae][0xa9])[0xf8])[0x83];[0xcd][0xca][0x3][0xaf][0x82]\[0x1b][0x8]m[0x3][0xc2][0xb8][0x8e][0xa4][0xb4]Sn[0xa2]l&[0xf2]5}[0xfd][0xf5][0xcf][0xbf]RZ'[0xb][0xdc][0x4][0x0][0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "0[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2021-01-26 15:55:48 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://accounts.google.com:443] can be kept alive indefinitely
+2021-01-26 15:55:48 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2021-01-26 15:55:48 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://accounts.google.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:48 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2021-01-26 15:55:48 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-01-26 15:55:48 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:48 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+2021-01-26 15:55:48 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 1; route allocated: 1 of 100; total allocated: 2 of 200]
+2021-01-26 15:55:48 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:48 DEBUG MainClientExec:256 - Executing request GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMA1nHeC71vLTP5kYcfqBXMciAplrKePeUs2yZX0s7VMUriZlmbuC5HRgNnNGIP-F1nXjF-hAjVYlZBEyzakIx0Jt6gz2nHl12-abafVcLwVDsKQ_YyIhmjyU0Jvaqe3FpqAP_m0_Z8r0A9-BsDK26UnpdOlsAOhTTwHLeo HTTP/1.1
+2021-01-26 15:55:48 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2021-01-26 15:55:48 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2021-01-26 15:55:48 DEBUG headers:133 - http-outgoing-1 >> GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMA1nHeC71vLTP5kYcfqBXMciAplrKePeUs2yZX0s7VMUriZlmbuC5HRgNnNGIP-F1nXjF-hAjVYlZBEyzakIx0Jt6gz2nHl12-abafVcLwVDsKQ_YyIhmjyU0Jvaqe3FpqAP_m0_Z8r0A9-BsDK26UnpdOlsAOhTTwHLeo HTTP/1.1
+2021-01-26 15:55:48 DEBUG headers:136 - http-outgoing-1 >> Host: www.googleapis.com
+2021-01-26 15:55:48 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2021-01-26 15:55:48 DEBUG headers:136 - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)
+2021-01-26 15:55:48 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 >> "GET /oauth2/v1/userinfo?access_token=ya29.a0AfH6SMA1nHeC71vLTP5kYcfqBXMciAplrKePeUs2yZX0s7VMUriZlmbuC5HRgNnNGIP-F1nXjF-hAjVYlZBEyzakIx0Jt6gz2nHl12-abafVcLwVDsKQ_YyIhmjyU0Jvaqe3FpqAP_m0_Z8r0A9-BsDK26UnpdOlsAOhTTwHLeo HTTP/1.1[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 >> "Host: www.googleapis.com[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_271)[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Date: Tue, 26 Jan 2021 08:55:48 GMT[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Expires: Mon, 01 Jan 1990 00:00:00 GMT[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Vary: Origin[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Vary: X-Origin[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Vary: Referer[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Server: ESF[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "X-XSS-Protection: 0[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "00000001[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "[0x1f][\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "0b5[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "[0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x2][0xff]M[0x8c][0xbd][0xe][0x82]0[0x18]Ew[0x9e][0x82]t[0x16]Z([0xff][0x93][0x84][0xc9][0xc4][0x5][0x89][0xae][0x86][0xc0]G[[0x2][0xb4][0x81][0x96][0xc5][0xf8][0xee][0xa6][0x1a][0x8d]w[0xba][0xc9]=[0xf7]<[0x1c][0xd7]E[0xa2]G[0x85][0x8b][0x2][0x12][0xc6]QB[0xd2]<#q[0x94]Gq@SJ[0xd1][0xc1][0x2]0[0xb7]b[0xb2][0xcc]n47L[0xb4][0xb][0xb][0x93][0x80][0x90]#[0xb3][0x83][0xdf][0xc9][0xf9][0xc3][0xed][0xb0][0x8a]A@[0xff][0x1e][0xf4]j[0xe0][0xbd]([0xd1]i[0xb3][0x82]up[0xad][0xd5]V`<q[0xea]3)[0xd9][0x4]f[0x83][0xb5][0x93][0x8b][0x86]E[[0x17][0xf6][0xb2][0xba]J[0x9a][0xfa][0xbc]o[0xb7]+.9[0xfd][0xf5][0x12]_[0x9a][0xd9]3#[0x90][0xa1][0xca][0xb0][0xe2]RKT[0xc]9O[0xe7][0x5]Y[0x18].z[0xd3][0x0][0x0][0x0][\r][\n]"
+2021-01-26 15:55:48 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 200 OK
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Pragma: no-cache
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Date: Tue, 26 Jan 2021 08:55:48 GMT
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Expires: Mon, 01 Jan 1990 00:00:00 GMT
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json; charset=UTF-8
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Vary: Origin
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Vary: X-Origin
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Vary: Referer
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Content-Encoding: gzip
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Server: ESF
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << X-XSS-Protection: 0
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << X-Frame-Options: SAMEORIGIN
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << X-Content-Type-Options: nosniff
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+2021-01-26 15:55:48 DEBUG headers:125 - http-outgoing-1 << Transfer-Encoding: chunked
+2021-01-26 15:55:48 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "0[\r][\n]"
+2021-01-26 15:55:48 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2021-01-26 15:55:48 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://www.googleapis.com:443] can be kept alive indefinitely
+2021-01-26 15:55:48 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2021-01-26 15:55:48 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://www.googleapis.com:443][total kept alive: 2; route allocated: 1 of 100; total allocated: 2 of 200]

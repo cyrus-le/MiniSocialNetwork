@@ -1,3 +1,4 @@
+[![From Cyrus Le](https://github.com/cyrus-le/MiniSocialNetwork/actions/workflows/maven.yml/badge.svg)](https://github.com/cyrus-le/MiniSocialNetwork/actions/workflows/maven.yml)
 # Mini Social Network
 
 *A stimulated social network. This project use Servlet as Controller and follow MVC2 model.*

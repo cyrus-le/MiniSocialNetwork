@@ -42,7 +42,6 @@ public class GoogleUtils {
         String link = GOOGLE_LINK_GET_USER_INFO + accessToken;
         String response = Request.Get(link).execute().returnContent().asString();
         GoogleDTO googlePojo = new Gson().fromJson(response, GoogleDTO.class);
-        System.out.println("");
         return googlePojo;
     }
 

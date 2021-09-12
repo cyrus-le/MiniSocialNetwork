@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.List;
-import java.util.logging.Level;
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -45,7 +44,7 @@ public class SearchArticlesController extends HttpServlet {
             if (request.getParameter("page") != null) {
                 pageNum = Integer.parseInt(request.getParameter("page"));
             }
-            int numberRecords = DAO.getAllRecords();
+            int numberRecords = DAO.getAllRecordsBySearching(search);
             int start = pageNum * POST_PER_PAGE;
             int totalPageNum = numberRecords / POST_PER_PAGE;
             if (numberRecords % POST_PER_PAGE != 0) {

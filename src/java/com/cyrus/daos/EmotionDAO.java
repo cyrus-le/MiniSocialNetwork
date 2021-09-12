@@ -110,8 +110,8 @@ public class EmotionDAO {
         EmotionDTO dto = null;
         try {
             String sql = "SELECT PostID,\n"
-                    + "SUM([Like]) AS Dem_Like,\n"
-                    + "SUM(Dislike) AS DEM_Dislike\n"
+                    + "SUM([Like]) AS CountLike,\n"
+                    + "SUM(Dislike) AS CountDislike\n"
                     + "FROM tbl_Emotion\n"
                     + "WHERE PostID = ?\n"
                     + "GROUP BY tbl_Emotion.PostID";

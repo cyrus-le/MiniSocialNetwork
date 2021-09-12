@@ -162,7 +162,7 @@
 
 
             <c:if test="${not empty requestScope.LIST}">
-                <ul class="pagination d-flex- justify-content-center">
+                <ul class="pagination d-flex justify-content-center">
                     <li class="page-item <c:if test="${requestScope.CURPAGE eq 0 }">disabled</c:if>">
                         <a  class="page-link" href="SocialNetworkController?page=${requestScope.CURPAGE - 1}">Previous</a>
                     </li>
@@ -177,6 +177,9 @@
                     </li>
                 </ul>
             </c:if>
+                        
+                        
+                        
             <c:if test="${empty requestScope.LIST}">
                 <div class="alert alert-dark my-5">
                     <i class="fas fa-search"></i><strong> NOT FOUND </strong>  OOPS You haven't posted anything.......

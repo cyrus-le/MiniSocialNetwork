@@ -120,7 +120,6 @@ public class ArticlesDAO implements ICRUDRepository<ArticlesDTO, String> {
             conn = MyConnection.getConnection();
             if (conn != null) {
                 preStm = conn.prepareStatement(sql);
-//                preStm.setString(1, search);
                 preStm.setInt(1, offset);
                 preStm.setInt(2, next);
                 rs = preStm.executeQuery();
@@ -172,6 +171,27 @@ public class ArticlesDAO implements ICRUDRepository<ArticlesDTO, String> {
     public int getAllRecords() throws SQLException, ClassNotFoundException, NamingException {
         int numberRecord = 0;
         String sql = "SELECT COUNT(*) FROM tbl_Articles WHERE Status = 'Active'";
+        try {
+            conn = MyConnection.getConnection();
+            if (conn != null) {
+                preStm = conn.prepareStatement(sql);
+                rs = preStm.executeQuery();
+                if (rs.next()) {
+                    numberRecord = rs.getInt(1);
+                }
+            }
+        } finally {
+            closeConnection();
+        }
+
+        return numberRecord;
+    }
+
+    public int getAllRecordsBySearching(String search) throws SQLException, ClassNotFoundException, NamingException {
+        int numberRecord = 0;
+        String sql = "SELECT COUNT(*) FROM tbl_Articles FULL OUTER JOIN tbl_Comments ON tbl_Articles.PostID = tbl_Comments.PostID "
+                + "WHERE (tbl_Articles.Description LIKE '%" + search + "%' OR  tbl_Articles.Title LIKE '%" + search + "%') "
+                + "AND tbl_Articles.Status = 'Active' ";
         try {
             conn = MyConnection.getConnection();
             if (conn != null) {

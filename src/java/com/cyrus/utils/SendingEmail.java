@@ -40,14 +40,13 @@ public class SendingEmail implements Serializable {
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.port", "587");
 
-        // dang nhap vao gmail
+
         Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(gmail, pword);
             }
         });
-
-        // tao tao tin
+       
         MimeMessage message = new MimeMessage(session);
         message.setFrom(new InternetAddress(gmail));
         message.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
@@ -57,7 +56,6 @@ public class SendingEmail implements Serializable {
                 + "Your verification code: " + code
                 + "\n\nThe code can be used only once.\n\n");
 
-        // gui mail di
         Transport.send(message);
 
     }

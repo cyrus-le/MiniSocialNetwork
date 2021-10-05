@@ -177,9 +177,9 @@
                     </li>
                 </ul>
             </c:if>
-                        
-                        
-                        
+
+
+
             <c:if test="${empty requestScope.LIST}">
                 <div class="alert alert-dark my-5">
                     <i class="fas fa-search"></i><strong> NOT FOUND </strong>  OOPS You haven't posted anything.......
@@ -250,8 +250,10 @@
                     </div>
                 </div>
             </div>
-            <script>window.addEventListener('load',()=>{$("#errorModal").modal();});</script>
-        </c:if>
+            <script>window.addEventListener('load', () => {
+                    $("#errorModal").modal();
+                });</script>
+            </c:if>
 
 
 

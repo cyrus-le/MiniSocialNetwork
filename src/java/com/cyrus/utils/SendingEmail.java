@@ -32,7 +32,7 @@ public class SendingEmail implements Serializable {
 
     public void sendEmail() throws MessagingException, AddressException {
         String gmail = "kazuocyrus@gmail.com";
-        String pword = "Cyrus3012";
+        String pword =  "Cyrus3012";
         Properties properties = new Properties();
 
         properties.put("mail.smtp.starttls.enable", "true");
@@ -40,13 +40,12 @@ public class SendingEmail implements Serializable {
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.port", "587");
 
-
         Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(gmail, pword);
             }
         });
-       
+
         MimeMessage message = new MimeMessage(session);
         message.setFrom(new InternetAddress(gmail));
         message.addRecipient(Message.RecipientType.TO, new InternetAddress(email));

@@ -1,0 +1,3 @@
+2021-10-10 16:30:57 ERROR SignupController:162 - Error at SignUpController: Violation of PRIMARY KEY constraint 'PK__Accounts__A9D105359D8366C4'. Cannot insert duplicate key in object 'dbo.tbl_Users'. The duplicate key value is (lanlnhse140961@fpt.edu.vn).
+2021-10-10 16:39:59 ERROR SignupController:162 - Error at SignUpController: Violation of PRIMARY KEY constraint 'PK__Accounts__A9D105359D8366C4'. Cannot insert duplicate key in object 'dbo.tbl_Users'. The duplicate key value is (nhatlinh35hoangdieu@gmail.com).
+2021-10-10 16:44:38 ERROR SignupController:161 - Error at SignUpController: Violation of PRIMARY KEY constraint 'PK__Accounts__A9D105359D8366C4'. Cannot insert duplicate key in object 'dbo.tbl_Users'. The duplicate key value is (nhatlinh35hoangdieu@gmail.com).

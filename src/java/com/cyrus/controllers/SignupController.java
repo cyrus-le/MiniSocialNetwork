@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.Random;
-import java.util.logging.Level;
 import javax.mail.MessagingException;
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
@@ -152,7 +151,6 @@ public class SignupController extends HttpServlet {
         try {
             final boolean check = checkValidate(request);
             if (check) {
-
                 callInsert(request);
                 url = SUCCESS;
             } else {

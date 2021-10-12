@@ -38,7 +38,7 @@
     - Log4j
     - Commons-fileupload-1.4
     - Commons-io-2.8.0
-    - Javax Mail
+    - Javax Mail & Activation
     
 ## Contact me 👇
 1. **[Linkedin](https://www.linkedin.com/in/cyrus-le-81a065180/)**
